@@ -63,7 +63,7 @@ INSERT INTO tags(nombre,descripcion, inicio,final, createdAT, updateAT)
 -- list all data in mensajes table
 SELECT * FROM mensajes;
 
--- INSERT TEST DATA FOR tags
+-- INSERT TEST DATA FOR mensajes
 INSERT INTO mensajes(descripcion, leido,suscripto, createdAT, updateAT, usuarioId, tagId)
     VALUES ('tenes la posibilidad de suscribirte al siguiente curso', true, true, '2022-04-12', '2022-04-12','2012-05-12', 1,1);
 

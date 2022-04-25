@@ -3,7 +3,7 @@ import { sequelize } from "../database/database.js";
 import { Mensaje }from "./Mensaje.js"
 
 export const Usuario = sequelize.define(
-  "usuarios",
+  "Usuarios",
   {
     id: {
       type: DataTypes.INTEGER,

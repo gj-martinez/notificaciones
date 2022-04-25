@@ -4,7 +4,7 @@ import { Mensaje }from "./Mensaje.js"
 
 
 export const Tag = sequelize.define(
-  "tags",
+  "Tags",
   {
     id: {
       type: DataTypes.INTEGER,

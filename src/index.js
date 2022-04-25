@@ -1,14 +1,17 @@
 import app from './app.js'
 import {sequelize} from './database/database.js'
-import dotenv from 'dotenv'
+import { config } from "dotenv";
+config();
+
+const PORT = process.env.PORT || 3000
 
 async function main() {
     try {
         await sequelize.sync({force: false});
-        dotenv.config()
         
-        app.listen(4000)
-        console.log('listening on port',4000)
+        
+        app.listen(PORT)
+        console.log('listening on port',PORT)
     } catch (error) {
         console.error('Unable to connect to the database:', error);
     }

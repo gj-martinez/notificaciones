@@ -8,4 +8,5 @@ export default {
     DB_PASSWORD: process.env.DB_PASSWORD ,
     DB_DIALECT: process.env.DB_DIALECT ,
 
+
 };

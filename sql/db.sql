@@ -29,11 +29,8 @@ CREATE TABLE IF NOT EXISTS Mensajes (
     usuarioId INTEGER REFERENCES Usuarios(id),
     tagId INTEGER REFERENCES Tags(id)
 );
--- list al tables
-\dt
 
--- list all data in usuarios table
-SELECT * FROM Usuarios;
+
 
 -- INSERT TEST DATA FOR usuarios
 INSERT INTO Usuarios(nombre, usuario, password, createdAT, updateAT)
@@ -47,9 +44,6 @@ INSERT INTO Usuarios(nombre, usuario, password, createdAT, updateAT)
     VALUES ('luciano', 'luciano', 'luciano22', '2022-04-12','2012-05-12');
 
 
--- list all data in tags table
-SELECT * FROM Tags;
-
 -- INSERT TEST DATA FOR tags
 INSERT INTO Tags(nombre,descripcion, inicio,final, createdAT, updateAT)
     VALUES ('download Vuejs', 'tutorial para descargar Vuejs', '2022-04-12','2022-05-12', '2022-04-12','2012-05-12');
@@ -61,8 +55,6 @@ INSERT INTO Tags(nombre,descripcion, inicio,final, createdAT, updateAT)
     VALUES ('download UI', 'tutorial para descargar UI', '2022-04-12','2022-04-12', '2022-05-12','2012-05-12');
 
 
--- list all data in mensajes table
-SELECT * FROM Mensajes;
 
 -- INSERT TEST DATA FOR mensajes
 

@@ -7,7 +7,7 @@ npm install
 cp .env
 ```
 
-Configurar el .env con los datos de su base de datos junto con los datos para JWT y el puerto donde se correra la app
+Configurar el .env con los datos de su base de datos y el puerto donde se correra la app
 
 
 ```
@@ -17,10 +17,15 @@ DB_USERNAME=
 DB_PASSWORD= 
 DB_DIALECT= 
 PORT = 
+```
 
-JWT_SECRETO = 
-JWT_TIEMPO_EXPIRA = 
-JWT_COOKIE_EXPIRE = 
+Configurar jsonwebtoken para poder crear el token y poder navegar por las apis, todo dentro del archivo .env.
+Ejemplo
+
+```
+JWT_SECRETO = super_secret
+JWT_TIEMPO_EXPIRA = 7d
+JWT_COOKIE_EXPIRE = 90
 ```
 
 y poner a andar el proyecto
